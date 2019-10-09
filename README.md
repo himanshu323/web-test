@@ -35,4 +35,7 @@ Since the Rest API service provided was not working , all countries endpoints we
 4.  PostCountryTest- This API doesn't exist yet as conveyed in the assignment and hence sample request/response shared in assignment was used to build the test case [ this test is expected to fail ].
 
 ### Extent Report UI Tests Screenshot - I:
+![ScreenShot](https://github.com/himanshu323/web-test/blob/master/images/UITests.png?raw=true)
+
+### Extent Report API Tests Screenshot - II:
 ![ScreenShot](https://github.com/himanshu323/web-test/blob/master/images/APITests.png?raw=true)
