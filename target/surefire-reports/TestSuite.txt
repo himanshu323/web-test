@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 28.122 s <<< FAILURE! - in TestSuite
+postCountry(com.hellofresh.apitest.PostCountryTest)  Time elapsed: 0.426 s  <<< FAILURE!
+java.lang.AssertionError: 
+2 expectations failed.
+Expected status code <200> but was <404>.
+
+Expected header "Content-Type" was not "application/json;charset=utf-8", was "null". Headers are:
+Date=Wed, 09 Oct 2019 19:37:38 GMT
+Content-Length=0
+Connection=keep-alive
+Set-Cookie=__cfduid=d33555071fc0cc1dcba16d5155e8efee51570649858; expires=Thu, 08-Oct-20 19:37:38 GMT; path=/; domain=.restcountries.eu; HttpOnly
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET
+Access-Control-Allow-Headers=Accept, X-Requested-With
+Cache-Control=public, max-age=86400
+CF-Cache-Status=DYNAMIC
+Expect-CT=max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Server=cloudflare
+CF-RAY=5232cf6ce93ee64c-LHR
+
+	at com.hellofresh.apitest.PostCountryTest.postCountry(PostCountryTest.java:40)
+
