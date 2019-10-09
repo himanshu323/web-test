@@ -33,3 +33,6 @@ Since the Rest API service provided was not working , all countries endpoints we
 2.  GetCountryByAlphaCodeTest- It gets all the countries using Alpha2Code
 3.  GetCountryByNameWithInvalidData- This test is provided with invalid data to test error **404** response.
 4.  PostCountryTest- This API doesn't exist yet as conveyed in the assignment and hence sample request/response shared in assignment was used to build the test case [ this test is expected to fail ].
+
+### Extent Report UI Tests Screenshot - I:
+![ScreenShot](https://github.com/himanshu323/web-test/blob/master/images/APITests.png?raw=true)
