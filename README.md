@@ -10,7 +10,7 @@
 * Update the maven project , just to make ensure that maven has downloaded all the necessary dependencies in your local repository from maven central.( `web-test -> Right Click -> Maven -> Update Project`)
 * Open command prompt and navigate to project directory, run `mvn clean test` to start the automation execution OR right click on the project in your IDE->Run As->Maven Test.
 * Test Run will contain both UI tests and API tests. `Both testngUI.xml and testngAPI.xml files are executed once you run 'mvn clean test'` .
-* After the test run finishes, Extent report can be accessed from location **“extentreport/resultsUI.html”**  for UI Tests and **“extentreport/resultsAPI.html”** for API Tests `Overall Test Run will contain 4 Passes in resultsUI.html for UI tests and [3 passes,1 failure] for API tests in resultsAPI.html `. [ Test for Post country is expected to fail since this API doesn't exist yet]
+* After the test run finishes, Extent report can be accessed from location **“extentreport/resultsUI.html”**  for UI Tests and **“extentreport/resultsAPI.html”** for API Tests `Overall Test Run will contain 3 Passes in resultsUI.html for UI tests and [3 passes,1 failure] for API tests in resultsAPI.html `. [ Test for Post country is expected to fail since this API doesn't exist yet]
 
 
 ## Features Included in the Framework
@@ -30,7 +30,7 @@
 Since the Rest API service provided was not working , all countries endpoints were down which were shared within the assignment. Considered another API endpoints which were publicily available and worked on the same functionality to search all countries and get country by alpha code `[ src/test/resources/apiconfig.properties- contains the API test data]`
 
 1.  GetAllCountriesTest- It gets all the countries using `https://restcountries.eu/rest/v2/all`
-2.  GetCountryByAlphaCodeTest- It gets all the countries using Alpha2Code
+2.  GetCountryByAlphaCodeTest- It gets all the countries using Alpha2Code and validate the same [ US,DE,GB are the countries which are validated here ]
 3.  GetCountryByNameWithInvalidData- This test is provided with invalid data to test error **404** response.
 4.  PostCountryTest- This API doesn't exist yet as conveyed in the assignment and hence sample request/response shared in assignment was used to build the test case [ this test is expected to fail ].
 
