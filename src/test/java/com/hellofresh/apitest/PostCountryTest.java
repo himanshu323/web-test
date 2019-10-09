@@ -2,10 +2,10 @@ package com.hellofresh.apitest;
 
 import java.io.IOException;
 import java.util.HashMap;
+
 import org.testng.annotations.Test;
-import io.restassured.path.json.JsonPath;
+
 import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 import restAPI.APIBaseClass;
 import restAPI.APIValidations;

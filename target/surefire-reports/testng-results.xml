@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" ignored="0" total="7" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="24378" started-at="2019-10-09T19:37:10Z" finished-at="2019-10-09T19:37:34Z">
+  <suite name="Suite" duration-ms="23785" started-at="2019-10-09T21:47:43Z" finished-at="2019-10-09T21:48:07Z">
     <groups>
     </groups>
-    <test name="ShoppingPortalLoginTest" duration-ms="12813" started-at="2019-10-09T19:37:10Z" finished-at="2019-10-09T19:37:23Z">
+    <test name="ShoppingPortalLoginTest" duration-ms="13490" started-at="2019-10-09T21:47:43Z" finished-at="2019-10-09T21:47:57Z">
       <class name="com.hellofresh.challenge.ShoppingPortalLoginTest">
-        <test-method status="PASS" signature="setupTest(java.lang.String, java.lang.String)[pri:0, instance:com.hellofresh.challenge.ShoppingPortalLoginTest@4f933fd1]" name="setupTest" is-config="true" duration-ms="5989" started-at="2019-10-09T19:37:10Z" finished-at="2019-10-09T19:37:16Z">
+        <test-method status="PASS" signature="setupTest(java.lang.String, java.lang.String)[pri:0, instance:com.hellofresh.challenge.ShoppingPortalLoginTest@4f933fd1]" name="setupTest" is-config="true" duration-ms="6327" started-at="2019-10-09T21:47:43Z" finished-at="2019-10-09T21:47:50Z">
           <params>
             <param index="0">
               <value>
@@ -23,7 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="loginInTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hellofresh.challenge.ShoppingPortalLoginTest@4f933fd1]" name="loginInTest" duration-ms="4442" started-at="2019-10-09T19:37:17Z" data-provider="ShoppingPortal" finished-at="2019-10-09T19:37:21Z">
+        <test-method status="PASS" signature="loginInTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hellofresh.challenge.ShoppingPortalLoginTest@4f933fd1]" name="loginInTest" duration-ms="4561" started-at="2019-10-09T21:47:50Z" data-provider="ShoppingPortal" finished-at="2019-10-09T21:47:55Z">
           <params>
             <param index="0">
               <value>
@@ -64,19 +64,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginInTest -->
-        <test-method status="PASS" signature="clickLogout()[pri:0, instance:com.hellofresh.challenge.ShoppingPortalLoginTest@4f933fd1]" name="clickLogout" is-config="true" duration-ms="1740" started-at="2019-10-09T19:37:21Z" finished-at="2019-10-09T19:37:23Z">
+        <test-method status="PASS" signature="clickLogout()[pri:0, instance:com.hellofresh.challenge.ShoppingPortalLoginTest@4f933fd1]" name="clickLogout" is-config="true" duration-ms="2068" started-at="2019-10-09T21:47:55Z" finished-at="2019-10-09T21:47:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickLogout -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.hellofresh.challenge.ShoppingPortalLoginTest@4f933fd1]" name="CloseBrowser" is-config="true" duration-ms="99" started-at="2019-10-09T19:37:23Z" depends-on-methods="com.hellofresh.challenge.ShoppingPortalLoginTest.clickLogout" finished-at="2019-10-09T19:37:23Z">
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.hellofresh.challenge.ShoppingPortalLoginTest@4f933fd1]" name="CloseBrowser" is-config="true" duration-ms="144" started-at="2019-10-09T21:47:57Z" depends-on-methods="com.hellofresh.challenge.ShoppingPortalLoginTest.clickLogout" finished-at="2019-10-09T21:47:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- com.hellofresh.challenge.ShoppingPortalLoginTest -->
     </test> <!-- ShoppingPortalLoginTest -->
-    <test name="ShoppingPortalRegistrationTest" duration-ms="15124" started-at="2019-10-09T19:37:10Z" finished-at="2019-10-09T19:37:25Z">
+    <test name="ShoppingPortalRegistrationTest" duration-ms="15693" started-at="2019-10-09T21:47:43Z" finished-at="2019-10-09T21:47:59Z">
       <class name="com.hellofresh.challenge.ShoppingPortalRegistrationTest">
-        <test-method status="PASS" signature="setupTest(java.lang.String, java.lang.String)[pri:0, instance:com.hellofresh.challenge.ShoppingPortalRegistrationTest@3c756e4d]" name="setupTest" is-config="true" duration-ms="6544" started-at="2019-10-09T19:37:10Z" finished-at="2019-10-09T19:37:17Z">
+        <test-method status="PASS" signature="setupTest(java.lang.String, java.lang.String)[pri:0, instance:com.hellofresh.challenge.ShoppingPortalRegistrationTest@3c756e4d]" name="setupTest" is-config="true" duration-ms="5874" started-at="2019-10-09T21:47:43Z" finished-at="2019-10-09T21:47:49Z">
           <params>
             <param index="0">
               <value>
@@ -92,23 +92,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="registrationForShoppingPortal()[pri:0, instance:com.hellofresh.challenge.ShoppingPortalRegistrationTest@3c756e4d]" name="registrationForShoppingPortal" duration-ms="7144" started-at="2019-10-09T19:37:17Z" finished-at="2019-10-09T19:37:24Z">
+        <test-method status="PASS" signature="registrationForShoppingPortal()[pri:0, instance:com.hellofresh.challenge.ShoppingPortalRegistrationTest@3c756e4d]" name="registrationForShoppingPortal" duration-ms="8142" started-at="2019-10-09T21:47:49Z" finished-at="2019-10-09T21:47:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registrationForShoppingPortal -->
-        <test-method status="PASS" signature="clickLogout()[pri:0, instance:com.hellofresh.challenge.ShoppingPortalRegistrationTest@3c756e4d]" name="clickLogout" is-config="true" duration-ms="1330" started-at="2019-10-09T19:37:24Z" finished-at="2019-10-09T19:37:25Z">
+        <test-method status="PASS" signature="clickLogout()[pri:0, instance:com.hellofresh.challenge.ShoppingPortalRegistrationTest@3c756e4d]" name="clickLogout" is-config="true" duration-ms="1546" started-at="2019-10-09T21:47:58Z" finished-at="2019-10-09T21:47:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickLogout -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.hellofresh.challenge.ShoppingPortalRegistrationTest@3c756e4d]" name="CloseBrowser" is-config="true" duration-ms="104" started-at="2019-10-09T19:37:25Z" depends-on-methods="com.hellofresh.challenge.ShoppingPortalRegistrationTest.clickLogout" finished-at="2019-10-09T19:37:25Z">
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.hellofresh.challenge.ShoppingPortalRegistrationTest@3c756e4d]" name="CloseBrowser" is-config="true" duration-ms="119" started-at="2019-10-09T21:47:59Z" depends-on-methods="com.hellofresh.challenge.ShoppingPortalRegistrationTest.clickLogout" finished-at="2019-10-09T21:47:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- com.hellofresh.challenge.ShoppingPortalRegistrationTest -->
     </test> <!-- ShoppingPortalRegistrationTest -->
-    <test name="ShoppingPortalCheckoutTest" duration-ms="24378" started-at="2019-10-09T19:37:10Z" finished-at="2019-10-09T19:37:34Z">
+    <test name="ShoppingPortalCheckoutTest" duration-ms="23785" started-at="2019-10-09T21:47:43Z" finished-at="2019-10-09T21:48:07Z">
       <class name="com.hellofresh.challenge.ShoppingPortalCheckoutTest">
-        <test-method status="PASS" signature="setupTest(java.lang.String, java.lang.String)[pri:0, instance:com.hellofresh.challenge.ShoppingPortalCheckoutTest@675d3402]" name="setupTest" is-config="true" duration-ms="6163" started-at="2019-10-09T19:37:10Z" finished-at="2019-10-09T19:37:16Z">
+        <test-method status="PASS" signature="setupTest(java.lang.String, java.lang.String)[pri:0, instance:com.hellofresh.challenge.ShoppingPortalCheckoutTest@675d3402]" name="setupTest" is-config="true" duration-ms="6262" started-at="2019-10-09T21:47:43Z" finished-at="2019-10-09T21:47:50Z">
           <params>
             <param index="0">
               <value>
@@ -124,7 +124,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="orderProcessing_CheckoutTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hellofresh.challenge.ShoppingPortalCheckoutTest@675d3402]" name="orderProcessing_CheckoutTest" duration-ms="15917" started-at="2019-10-09T19:37:17Z" data-provider="ShoppingPortal" finished-at="2019-10-09T19:37:32Z">
+        <test-method status="PASS" signature="orderProcessing_CheckoutTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hellofresh.challenge.ShoppingPortalCheckoutTest@675d3402]" name="orderProcessing_CheckoutTest" duration-ms="15324" started-at="2019-10-09T21:47:50Z" data-provider="ShoppingPortal" finished-at="2019-10-09T21:48:06Z">
           <params>
             <param index="0">
               <value>
@@ -165,81 +165,85 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- orderProcessing_CheckoutTest -->
-        <test-method status="PASS" signature="clickLogout()[pri:0, instance:com.hellofresh.challenge.ShoppingPortalCheckoutTest@675d3402]" name="clickLogout" is-config="true" duration-ms="1836" started-at="2019-10-09T19:37:32Z" finished-at="2019-10-09T19:37:34Z">
+        <test-method status="PASS" signature="clickLogout()[pri:0, instance:com.hellofresh.challenge.ShoppingPortalCheckoutTest@675d3402]" name="clickLogout" is-config="true" duration-ms="1632" started-at="2019-10-09T21:48:06Z" finished-at="2019-10-09T21:48:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickLogout -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.hellofresh.challenge.ShoppingPortalCheckoutTest@675d3402]" name="CloseBrowser" is-config="true" duration-ms="99" started-at="2019-10-09T19:37:34Z" depends-on-methods="com.hellofresh.challenge.ShoppingPortalCheckoutTest.clickLogout" finished-at="2019-10-09T19:37:34Z">
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.hellofresh.challenge.ShoppingPortalCheckoutTest@675d3402]" name="CloseBrowser" is-config="true" duration-ms="117" started-at="2019-10-09T21:48:07Z" depends-on-methods="com.hellofresh.challenge.ShoppingPortalCheckoutTest.clickLogout" finished-at="2019-10-09T21:48:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- com.hellofresh.challenge.ShoppingPortalCheckoutTest -->
     </test> <!-- ShoppingPortalCheckoutTest -->
   </suite> <!-- Suite -->
-  <suite name="SuiteAPI" duration-ms="3221" started-at="2019-10-09T19:37:34Z" finished-at="2019-10-09T19:37:38Z">
+  <suite name="SuiteAPI" duration-ms="3252" started-at="2019-10-09T21:48:07Z" finished-at="2019-10-09T21:48:11Z">
     <groups>
     </groups>
-    <test name="GetAllCountriesTest" duration-ms="1998" started-at="2019-10-09T19:37:34Z" finished-at="2019-10-09T19:37:36Z">
+    <test name="GetAllCountriesTest" duration-ms="2109" started-at="2019-10-09T21:48:07Z" finished-at="2019-10-09T21:48:09Z">
       <class name="com.hellofresh.apitest.GetAllCountriesTest">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:com.hellofresh.apitest.GetAllCountriesTest@39aeed2f]" name="setupTest" is-config="true" duration-ms="1" started-at="2019-10-09T19:37:34Z" finished-at="2019-10-09T19:37:34Z">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:com.hellofresh.apitest.GetAllCountriesTest@39aeed2f]" name="setupTest" is-config="true" duration-ms="1" started-at="2019-10-09T21:48:07Z" finished-at="2019-10-09T21:48:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="getAllCountriesAndValidate()[pri:0, instance:com.hellofresh.apitest.GetAllCountriesTest@39aeed2f]" name="getAllCountriesAndValidate" duration-ms="1996" started-at="2019-10-09T19:37:34Z" finished-at="2019-10-09T19:37:36Z">
+        <test-method status="PASS" signature="getAllCountriesAndValidate()[pri:0, instance:com.hellofresh.apitest.GetAllCountriesTest@39aeed2f]" name="getAllCountriesAndValidate" duration-ms="2105" started-at="2019-10-09T21:48:07Z" finished-at="2019-10-09T21:48:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getAllCountriesAndValidate -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.hellofresh.apitest.GetAllCountriesTest@39aeed2f]" name="teardown" is-config="true" duration-ms="1" started-at="2019-10-09T19:37:36Z" finished-at="2019-10-09T19:37:36Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.hellofresh.apitest.GetAllCountriesTest@39aeed2f]" name="teardown" is-config="true" duration-ms="0" started-at="2019-10-09T21:48:09Z" finished-at="2019-10-09T21:48:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.hellofresh.apitest.GetAllCountriesTest -->
     </test> <!-- GetAllCountriesTest -->
-    <test name="GetCountryByAlphaCodeTest" duration-ms="443" started-at="2019-10-09T19:37:36Z" finished-at="2019-10-09T19:37:37Z">
+    <test name="GetCountryByAlphaCodeTest" duration-ms="329" started-at="2019-10-09T21:48:09Z" finished-at="2019-10-09T21:48:10Z">
       <class name="com.hellofresh.apitest.GetCountryByAlphaCodeTest">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:com.hellofresh.apitest.GetCountryByAlphaCodeTest@8bd1b6a]" name="setupTest" is-config="true" duration-ms="0" started-at="2019-10-09T19:37:36Z" finished-at="2019-10-09T19:37:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="getCountryByAlphaCodeAndValidateResponse()[pri:0, instance:com.hellofresh.apitest.GetCountryByAlphaCodeTest@8bd1b6a]" name="getCountryByAlphaCodeAndValidateResponse" duration-ms="442" started-at="2019-10-09T19:37:36Z" finished-at="2019-10-09T19:37:37Z">
+        <test-method status="PASS" signature="getCountryByAlphaCodeAndValidateResponse()[pri:0, instance:com.hellofresh.apitest.GetCountryByAlphaCodeTest@8bd1b6a]" name="getCountryByAlphaCodeAndValidateResponse" duration-ms="327" started-at="2019-10-09T21:48:09Z" finished-at="2019-10-09T21:48:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getCountryByAlphaCodeAndValidateResponse -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.hellofresh.apitest.GetCountryByAlphaCodeTest@8bd1b6a]" name="teardown" is-config="true" duration-ms="0" started-at="2019-10-09T19:37:37Z" finished-at="2019-10-09T19:37:37Z">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:com.hellofresh.apitest.GetCountryByAlphaCodeTest@8bd1b6a]" name="setupTest" is-config="true" duration-ms="0" started-at="2019-10-09T21:48:09Z" finished-at="2019-10-09T21:48:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.hellofresh.apitest.GetCountryByAlphaCodeTest@8bd1b6a]" name="teardown" is-config="true" duration-ms="1" started-at="2019-10-09T21:48:10Z" finished-at="2019-10-09T21:48:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.hellofresh.apitest.GetCountryByAlphaCodeTest -->
     </test> <!-- GetCountryByAlphaCodeTest -->
-    <test name="GetCountryByNameWithInvalidData" duration-ms="244" started-at="2019-10-09T19:37:37Z" finished-at="2019-10-09T19:37:37Z">
+    <test name="GetCountryByNameWithInvalidData" duration-ms="245" started-at="2019-10-09T21:48:10Z" finished-at="2019-10-09T21:48:10Z">
       <class name="com.hellofresh.apitest.GetCountryByNameWithInvalidData">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:com.hellofresh.apitest.GetCountryByNameWithInvalidData@26be92ad]" name="setupTest" is-config="true" duration-ms="1" started-at="2019-10-09T19:37:37Z" finished-at="2019-10-09T19:37:37Z">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:com.hellofresh.apitest.GetCountryByNameWithInvalidData@26be92ad]" name="setupTest" is-config="true" duration-ms="0" started-at="2019-10-09T21:48:10Z" finished-at="2019-10-09T21:48:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="validateInvalidCountryResponse()[pri:0, instance:com.hellofresh.apitest.GetCountryByNameWithInvalidData@26be92ad]" name="validateInvalidCountryResponse" duration-ms="243" started-at="2019-10-09T19:37:37Z" finished-at="2019-10-09T19:37:37Z">
+        <test-method status="PASS" signature="validateInvalidCountryResponse()[pri:0, instance:com.hellofresh.apitest.GetCountryByNameWithInvalidData@26be92ad]" name="validateInvalidCountryResponse" duration-ms="245" started-at="2019-10-09T21:48:10Z" finished-at="2019-10-09T21:48:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateInvalidCountryResponse -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.hellofresh.apitest.GetCountryByNameWithInvalidData@26be92ad]" name="teardown" is-config="true" duration-ms="0" started-at="2019-10-09T19:37:37Z" finished-at="2019-10-09T19:37:37Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.hellofresh.apitest.GetCountryByNameWithInvalidData@26be92ad]" name="teardown" is-config="true" duration-ms="0" started-at="2019-10-09T21:48:10Z" finished-at="2019-10-09T21:48:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.hellofresh.apitest.GetCountryByNameWithInvalidData -->
     </test> <!-- GetCountryByNameWithInvalidData -->
-    <test name="PostCountryTest_APINotYetDeveloped" duration-ms="426" started-at="2019-10-09T19:37:37Z" finished-at="2019-10-09T19:37:38Z">
+    <test name="PostCountryTest_APINotYetDeveloped" duration-ms="437" started-at="2019-10-09T21:48:10Z" finished-at="2019-10-09T21:48:11Z">
       <class name="com.hellofresh.apitest.PostCountryTest">
-        <test-method status="FAIL" signature="postCountry()[pri:0, instance:com.hellofresh.apitest.PostCountryTest@28d25987]" name="postCountry" duration-ms="420" started-at="2019-10-09T19:37:37Z" finished-at="2019-10-09T19:37:38Z">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:com.hellofresh.apitest.PostCountryTest@28d25987]" name="setupTest" is-config="true" duration-ms="1" started-at="2019-10-09T21:48:10Z" finished-at="2019-10-09T21:48:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method status="FAIL" signature="postCountry()[pri:0, instance:com.hellofresh.apitest.PostCountryTest@28d25987]" name="postCountry" duration-ms="427" started-at="2019-10-09T21:48:10Z" finished-at="2019-10-09T21:48:11Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[2 expectations failed.
 Expected status code <200> but was <404>.
 
 Expected header "Content-Type" was not "application/json;charset=utf-8", was "null". Headers are:
-Date=Wed, 09 Oct 2019 19:37:38 GMT
+Date=Wed, 09 Oct 2019 21:48:11 GMT
 Content-Length=0
 Connection=keep-alive
-Set-Cookie=__cfduid=d33555071fc0cc1dcba16d5155e8efee51570649858; expires=Thu, 08-Oct-20 19:37:38 GMT; path=/; domain=.restcountries.eu; HttpOnly
+Set-Cookie=__cfduid=d47f22f1990d960d4d3b2f2b161ca14a41570657691; expires=Thu, 08-Oct-20 21:48:11 GMT; path=/; domain=.restcountries.eu; HttpOnly
 Access-Control-Allow-Origin=*
 Access-Control-Allow-Methods=GET
 Access-Control-Allow-Headers=Accept, X-Requested-With
@@ -247,7 +251,7 @@ Cache-Control=public, max-age=86400
 CF-Cache-Status=DYNAMIC
 Expect-CT=max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 Server=cloudflare
-CF-RAY=5232cf6ce93ee64c-LHR
+CF-RAY=52338ea90fe0bb8e-LHR
 ]]>
             </message>
             <full-stacktrace>
@@ -255,10 +259,10 @@ CF-RAY=5232cf6ce93ee64c-LHR
 Expected status code <200> but was <404>.
 
 Expected header "Content-Type" was not "application/json;charset=utf-8", was "null". Headers are:
-Date=Wed, 09 Oct 2019 19:37:38 GMT
+Date=Wed, 09 Oct 2019 21:48:11 GMT
 Content-Length=0
 Connection=keep-alive
-Set-Cookie=__cfduid=d33555071fc0cc1dcba16d5155e8efee51570649858; expires=Thu, 08-Oct-20 19:37:38 GMT; path=/; domain=.restcountries.eu; HttpOnly
+Set-Cookie=__cfduid=d47f22f1990d960d4d3b2f2b161ca14a41570657691; expires=Thu, 08-Oct-20 21:48:11 GMT; path=/; domain=.restcountries.eu; HttpOnly
 Access-Control-Allow-Origin=*
 Access-Control-Allow-Methods=GET
 Access-Control-Allow-Headers=Accept, X-Requested-With
@@ -266,7 +270,7 @@ Cache-Control=public, max-age=86400
 CF-Cache-Status=DYNAMIC
 Expect-CT=max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 Server=cloudflare
-CF-RAY=5232cf6ce93ee64c-LHR
+CF-RAY=52338ea90fe0bb8e-LHR
 
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -320,11 +324,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCountry -->
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:com.hellofresh.apitest.PostCountryTest@28d25987]" name="setupTest" is-config="true" duration-ms="0" started-at="2019-10-09T19:37:37Z" finished-at="2019-10-09T19:37:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.hellofresh.apitest.PostCountryTest@28d25987]" name="teardown" is-config="true" duration-ms="0" started-at="2019-10-09T19:37:38Z" finished-at="2019-10-09T19:37:38Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.hellofresh.apitest.PostCountryTest@28d25987]" name="teardown" is-config="true" duration-ms="0" started-at="2019-10-09T21:48:11Z" finished-at="2019-10-09T21:48:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

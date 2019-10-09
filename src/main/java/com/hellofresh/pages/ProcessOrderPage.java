@@ -1,12 +1,9 @@
 package com.hellofresh.pages;
 
-import java.util.Date;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -14,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.hellofresh.basemanager.BaseClass;
 import com.hellofresh.commonutils.CommonUtils;
 
-public class ProcessOrderPage{
+public class ProcessOrderPage {
 
 	@FindBy(name = "Submit")
 	public WebElement addToCartButton;
@@ -39,15 +36,12 @@ public class ProcessOrderPage{
 
 	@FindBy(xpath = "//*[@id='cart_navigation']/button")
 	public WebElement confirmMyOrderButton;
-	
+
 	@FindBy(id = "quantity_wanted")
 	public WebElement quantityField;
-	
+
 	@FindBy(id = "group_1")
 	public WebElement sizeSelect;
-	
-	
-	
 
 	WebDriver driver;
 
@@ -57,23 +51,22 @@ public class ProcessOrderPage{
 		// TODO Auto-generated constructor stub
 	}
 
-	public void processOrder(String shoppingItem,String quantityValue,String sizeValue) {
+	public void processOrder(String shoppingItem, String quantityValue, String sizeValue) {
 
-		
 		CommonUtils.logInfo("Order Processsing-->Proceed to checkout-->Address-->Shipping-->Payment");
-		
+
 		driver.findElement(By.xpath("//a[@title='" + shoppingItem + "']/ancestor::li")).click();
 
 		driver.findElement(By.xpath("//a[@title='" + shoppingItem + "']/ancestor::li")).click();
 
 		quantityField.clear();
-		
+
 		quantityField.sendKeys(quantityValue);
-		
-		Select select=new Select(sizeSelect);
-		
+
+		Select select = new Select(sizeSelect);
+
 		select.selectByVisibleText(sizeValue);
-		
+
 		WebDriverWait wait = BaseClass.wait;
 
 		wait.until(ExpectedConditions.visibilityOf(addToCartButton)).click();

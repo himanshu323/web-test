@@ -5,14 +5,12 @@ import java.io.IOException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.testng.Assert;
 
 import com.hellofresh.basemanager.BaseClass;
 import com.hellofresh.commonutils.CommonUtils;
 
-public class OrderConfirmationPage{
+public class OrderConfirmationPage {
 
 	@FindBy(css = "h1")
 	public WebElement orderConfirmationHeader;
@@ -36,20 +34,20 @@ public class OrderConfirmationPage{
 	public void verifyOrderConfirmation() throws IOException {
 
 		CommonUtils.logInfo("Verify Order Confirmation Details");
-		
+
 		WebElement heading = BaseClass.wait.until(ExpectedConditions.visibilityOf(orderConfirmationHeader));
 
 		CommonUtils.verifyEquals(heading.getText(), "ORDER CONFIRMATION", "ORDER CONFIRMATION Header");
-		
-		CommonUtils.verifyIsTrue(shippingLabel.isDisplayed(),"Shipping Label");
-		
-		CommonUtils.verifyIsTrue(paymentLabel.isDisplayed(),"Payment Label");
 
-		CommonUtils.verifyIsTrue(orderConfirmationLabel.getText().contains("Your order on My Store is complete."),"Order Confirmation Label");
+		CommonUtils.verifyIsTrue(shippingLabel.isDisplayed(), "Shipping Label");
 
-		CommonUtils.verifyIsTrue(driver.getCurrentUrl().contains("controller=order-confirmation"),"Current Window URL");
+		CommonUtils.verifyIsTrue(paymentLabel.isDisplayed(), "Payment Label");
 
-	
+		CommonUtils.verifyIsTrue(orderConfirmationLabel.getText().contains("Your order on My Store is complete."),
+				"Order Confirmation Label");
+
+		CommonUtils.verifyIsTrue(driver.getCurrentUrl().contains("controller=order-confirmation"),
+				"Current Window URL");
 
 	}
 

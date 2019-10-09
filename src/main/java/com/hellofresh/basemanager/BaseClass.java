@@ -111,12 +111,19 @@ public class BaseClass extends DriverManager {
 	@DataProvider(name = "ShoppingPortal")
 
 	public static Object[][] Authentication() throws Exception {
-		
-	
-	//	String  environment= System.getProperty("environment");
 
-		Object[][] testObjArray = ExcelUtils.getData(
-				System.getProperty("user.dir") + "/src/test/resources/shoppingPortalTestData.xlsx", "shoppingPortalQA");
+		// String environment= System.getProperty("environment");
+
+		Object[][] testObjArray;
+		if (System.getProperty("os.name").contains("Windows")) {
+			testObjArray = ExcelUtils.getData(
+					System.getProperty("user.dir") + "\\src\\test\\resources\\shoppingPortalTestData.xlsx",
+					"shoppingPortalQA");
+		} else {
+			testObjArray = ExcelUtils.getData(
+					System.getProperty("user.dir") + "/src/test/resources/shoppingPortalTestData.xlsx",
+					"shoppingPortalQA");
+		}
 
 		return (testObjArray);
 

@@ -1,16 +1,14 @@
 package com.hellofresh.pages;
 
 import java.util.Date;
-import java.util.HashMap;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
 import com.hellofresh.commonutils.CommonUtils;
 
-public class AuthPage{
+public class AuthPage {
 
 	@FindBy(id = "email_create")
 	public WebElement emailField;
@@ -42,21 +40,19 @@ public class AuthPage{
 		String email = "hf_challenge_" + timestamp + "@hf" + timestamp.substring(7) + ".com";
 
 		CommonUtils.customerData.put("email", email);
-		
+
 		emailField.sendKeys(email);
 
 	}
 
-	public void clickSubmit(){
-		 CommonUtils.logInfo("Click Create Account");
+	public void clickSubmit() {
+		CommonUtils.logInfo("Click Create Account");
 		submitButton.click();
 	}
-	public void loginToShoppingPortal(String email,String password) {
 
-	 
-	 CommonUtils.logInfo("Login into the shopping portal with Email : "+ email);
-	 
-	 
+	public void loginToShoppingPortal(String email, String password) {
+
+		CommonUtils.logInfo("Login into the shopping portal with Email : " + email);
 
 		existingEmailField.sendKeys(email);
 

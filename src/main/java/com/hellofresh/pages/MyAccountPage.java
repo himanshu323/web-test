@@ -6,7 +6,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.testng.Assert;
 
 import com.hellofresh.basemanager.BaseClass;
 import com.hellofresh.commonutils.CommonUtils;
@@ -42,16 +41,14 @@ public class MyAccountPage {
 		WebElement heading = BaseClass.wait.until(ExpectedConditions.visibilityOf(myAccountHeader));
 
 		CommonUtils.verifyEquals(heading.getText(), "MY ACCOUNT", "My Account Header");
-		
+
 		CommonUtils.verifyEquals(accountNameLabel.getText(), firstName + " " + lastName, "Account Name Label");
 
+		CommonUtils.verifyIsTrue(accountInfo.getText().contains("Welcome to your account."), "Account Info Text");
 
-		CommonUtils.verifyIsTrue(accountInfo.getText().contains("Welcome to your account."),"Account Info Text");
+		CommonUtils.verifyIsTrue(logOutField.isDisplayed(), "Logout Button");
 
-		CommonUtils.verifyIsTrue(logOutField.isDisplayed(),"Logout Button");
-		
-		CommonUtils.verifyIsTrue(driver.getCurrentUrl().contains("controller=my-account"),"My Account Window URL");
-
+		CommonUtils.verifyIsTrue(driver.getCurrentUrl().contains("controller=my-account"), "My Account Window URL");
 
 	}
 

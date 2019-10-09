@@ -6,23 +6,20 @@ import io.restassured.response.Response;
 
 public class DataConverter {
 
-public static JsonPath rawToJson(Response response){
-		
+	public static JsonPath rawToJson(Response response) {
+
 		String text = response.asString();
 		JsonPath js = new JsonPath(text);
 
-		
-		
 		return js;
 
 	}
-	
-	public static XmlPath rawToXml(Response response){
-		
+
+	public static XmlPath rawToXml(Response response) {
+
 		String text = response.asString();
 		XmlPath xm = new XmlPath(text);
 
-		
 		return xm;
 
 	}

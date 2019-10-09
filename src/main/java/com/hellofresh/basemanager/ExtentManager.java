@@ -13,56 +13,51 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-
-
-
 public class ExtentManager {
 
 	private static ExtentReports extent;
-	
-	
-	
 
-	    public static ExtentReports createInstance(String fileName) {
-	        ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(fileName);
-	       
-	        htmlReporter.config().setTestViewChartLocation(ChartLocation.BOTTOM);
-	        htmlReporter.config().setChartVisibilityOnOpen(true);
-	        htmlReporter.config().setTheme(Theme.STANDARD);
-	        htmlReporter.config().setDocumentTitle(fileName);
-	        htmlReporter.config().setEncoding("utf-8");
-	        htmlReporter.config().setReportName(fileName);
-	        
-	        extent = new ExtentReports();
-	        extent.attachReporter(htmlReporter);
-	        extent.setSystemInfo("Automation Tester", "Himanshu Arora");
-	        extent.setSystemInfo("Organization", "Hellofresh");
-	        extent.setSystemInfo("Build no", "W2A-1234");
-	        
-	        
-	        return extent;
-	    }
+	public static ExtentReports createInstance(String fileName) {
+		ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(fileName);
 
-	    
-	    public static String screenshotPath;
-		public static String screenshotName;
-		
-		public static void captureScreenshot() {
+		htmlReporter.config().setTestViewChartLocation(ChartLocation.BOTTOM);
+		htmlReporter.config().setChartVisibilityOnOpen(true);
+		htmlReporter.config().setTheme(Theme.STANDARD);
+		htmlReporter.config().setDocumentTitle(fileName);
+		htmlReporter.config().setEncoding("utf-8");
+		htmlReporter.config().setReportName(fileName);
 
-			File scrFile = ((TakesScreenshot) DriverManager.getDriver()).getScreenshotAs(OutputType.FILE);
+		extent = new ExtentReports();
+		extent.attachReporter(htmlReporter);
+		extent.setSystemInfo("Automation Tester", "Himanshu Arora");
+		extent.setSystemInfo("Organization", "Hellofresh");
+		extent.setSystemInfo("Build no", "TestABC");
 
-			Date d = new Date();
-			screenshotName = d.toString().replace(":", "_").replace(" ", "_") + ".jpg";
+		return extent;
+	}
 
-			try {
-				FileUtils.copyFile(scrFile, new File(System.getProperty("user.dir") + "\\reports\\" + screenshotName));
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+	public static String screenshotPath;
+	public static String screenshotName;
+
+	public static void captureScreenshot() {
+
+		File scrFile = ((TakesScreenshot) DriverManager.getDriver()).getScreenshotAs(OutputType.FILE);
+
+		Date d = new Date();
+		screenshotName = d.toString().replace(":", "_").replace(" ", "_") + ".jpg";
+
+		try {
+			if (System.getProperty("os.name").contains("Windows")) {
+				FileUtils.copyFile(scrFile, new File(System.getProperty("user.dir") + "\\screenshots\\" + screenshotName));
+			} else {
+				FileUtils.copyFile(scrFile, new File(System.getProperty("user.dir") + "/screenshots/" + screenshotName));
+
 			}
-
-		
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-	
 
 	}
+
+}
